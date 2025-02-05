@@ -12,14 +12,45 @@ body{
     color: #fff;
 }
 
+/* header */
+
 #header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.pexels.com/photos/30340399/pexels-photo-30340399/free-photo-of-young-man-by-tranquil-pond-in-forest-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
-    background-size: auto 100%; /* Full height, auto width */
-    background-repeat: no-repeat;
-    background-position: right center; /* Positions image to right */
+  width: 100%;
+  height: 20vh;
 }
+
+.header-text{ 
+    padding-top: 0px;  
+}
+
+.row-one{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-header{
+    margin-right:70px;
+}
+
+.right-header{
+    flex-basis: 30%;
+}
+
+.right-header img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.left-header{
+    flex-basis: 60%;
+}
+
+.left-header{
+    margin-top: 10%;
+}
+
+
 
 .container{
     padding: 5px 6%;
@@ -30,6 +61,8 @@ body{
     width: 60px;
     height: auto;
 }
+
+/* navbar */
 
 nav{
     display: flex;
@@ -53,7 +86,7 @@ nav ul li a{
 
     text-decoration: none;
     color: #ffff;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -76,6 +109,8 @@ nav ul li a:hover{
     color: #06bd43;
 }
 
+/* header */
+
 .header-text{
 
     margin-top: 10%;
@@ -91,5 +126,52 @@ nav ul li a:hover{
 
 .header-text h1 span{
 
-    color: #AA6BE4;
+    color: #9a4ce3;
+}
+
+/* about */
+
+#about{
+    padding: 15% 0;
+    color: black;
+}
+
+.row-two{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1-l{
+    flex-basis: 35%;
+}
+
+.about-col-1-l img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2-r{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #07c948;
+}
+
+.about-content{
+    padding: 10px;
+    font-size: 20px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-radius: 10px;
+    background-color: rgb(233, 223, 35);
+    margin: 20px;
+    cursor: pointer;
+}
+
+.about-content:hover{
+    box-shadow: 4px 3px rgb(255, 255, 254);
+    background-color: rgb(255, 243, 19);
 }

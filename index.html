@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="script" href="script.js">
 </head>
+
 <body>
     <div id="header">
 
@@ -24,18 +28,75 @@
             </nav>
         </div>
 
-        <div class="header-text">
-            <h1>Hi, I am <span id="id-name">Sahil Rawat</span> From<br/> India and I am a <br/><span id="element">Web Developer</span></h1>
+        <!-- header section -->
+        <div class="header-text" id="headid">
+            <div class="row-one">
+                <div class="left-header">
+                    <h1>Hi, I am <span id="id-name">Sahil Rawat</span> From<br /> India and I am <br /><span
+                            id="element">Web Developer</span></h1>
+                </div>
+                <div class="right-header">
+                    <img src="https://images.pexels.com/photos/30340399/pexels-photo-30340399/free-photo-of-young-man-by-tranquil-pond-in-forest-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        alt="img">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about section -->
+        <div id="about">
+            <div class="container">
+                <div class="row-two">
+                    <div class="about-col-1-l">
+                        <img src="https://images.pexels.com/photos/29690236/pexels-photo-29690236/free-photo-of-contemplative-man-in-red-light-portrait.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                            alt="img">
+                    </div>
+                    <div class="about-col-2-r">
+                        <h1 class="sub-title">About Me</h1>
+                        
+                        <div class="about-content">
+                            <p>
+                                Hi, I’m Sahil Rawat, a passionate Web Developer & Designer from India. I specialize in
+                                creating interactive, user-friendly, and visually appealing websites using HTML, CSS,
+                                JavaScript, and React.
+                            </p>
+                        </div>
+
+                        <div class="about-content">
+                            <p>
+                                With a keen interest in front-end development, I love transforming ideas into real-world
+                                projects. My goal is to build efficient, responsive, and modern web applications that
+                                enhance user experience.
+                            </p>
+                        </div>
+
+                        <div class="about-content">
+                            <p>
+                                When I’m not coding, I enjoy learning new technologies and doing problem solving questions on platforms like leetcode.
+                            </p>
+                        </div>
+
+                        <div class="about-content">
+                            <p>
+                                🚀 Let’s build something amazing together!
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer','UI/UX Designer', 'Programmer', 'Upcoming SDE 1'],
-          typeSpeed: 70,
+            strings: ['a UI/UX Designer', 'a Programmer', ' an upcoming SDE 1'],
+            typeSpeed: 70,
         });
-      </script>
+    </script>
+
+
 </body>
+
 </html>
