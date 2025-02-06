@@ -6,11 +6,16 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
 
     background-color: #080808;
     color: #fff;
 }
+
 
 /* header */
 
@@ -286,7 +291,206 @@ nav ul li a:hover{
 }
 
 .services-list div:hover{
-    background: #08ff42;
+    background: #0ec639;
     transform: translateY(-10px);
     color: black;
 }
+
+/* portfolio */
+
+#portfolio{
+
+    padding: 50px 0;
+}
+
+.work-list{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #7717e4);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.layer a{
+
+    margin-top: 20px;
+    color: #862be8;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    border: 1px solid #0ec639;
+    padding: 14px 50px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background: #0ec639;
+    color: black;
+}
+
+/* contact */
+
+.row-three{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left a{
+    margin-left: 21px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    margin-left: 21px;
+}
+
+.contact-left p i{
+    color:#9a4ce3;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#8a55c2;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.contact-right form button{
+    background-color: #080808;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2a2a2a;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.contact-right form button{
+    cursor: pointer;
+    padding: 14px 60px;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.copyright i{
+    color:#ff004f;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 20px;
+    display: block;
+    font-size: large;
+    margin-left:10px;
+}
+
+/* responsive css to be added soon*/
+
+
+
+
+
+
+
