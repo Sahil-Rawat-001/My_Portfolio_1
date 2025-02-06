@@ -7,7 +7,6 @@
     <title>My-Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <link rel="script" href="script.js">
 </head>
 
 <body>
@@ -81,6 +80,39 @@
                                 🚀 Let’s build something amazing together!
                             </p>
                         </div>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab(event,'skill')"> Skills </p>
+                            <p class="tab-links" onclick="openTab(event,'experience')"> Experience </p>
+                            <p class="tab-links" onclick="openTab(event,'education')"> Education </p>
+                        </div>
+                        <!-- skills -->
+                        <div class="tab-contents active-tab" id="skill">
+                            <ul>
+                                <li><span>FRONT-END</span> <br> <div class="tab-desc">HTMl5, CSS, JavaScript, React</div> </li>
+                                <li><span>BACK-END</span> <br> <div class="tab-desc">Node.js, Express.js</div> </li>
+                                <li><span>DATABASE</span> <br><div class="tab-desc">MongoDB, MySQL</div></li>
+                                <li><span>PROBLEM-SOLVING</span> <br><div class="tab-desc">Solving Data Structures and Algorithms problems on Daily Basis in C++ language</div></li>
+                                <li><span>PROGRAMMING-LANGUAGES</span> <br><div class="tab-desc"> C/C++, Python, Java</div></li>
+                            </ul>
+                        </div>
+
+                        <!-- experience -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>InternShip</span> <div class="tab-desc">Intern at CodeQuotient Pvt. Ltd. (June'2024 - July'2024) </div> </li>
+                            </ul>
+                        </div>
+
+                        <!-- education -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Master of Computer Applications</span> <div class="tab-desc">Uttaranchal University Dehradun (2023 - 2025)</div> </li>
+                                <li><span>Bachelor of Computer Applications</span> <div class="tab-desc">Modern Institue of Technologies Rishikesh (2020 - 2023)</div> </li>
+                                <li><span>Senior Secondary (12th)</span> <div class="tab-desc"> CBSE Board (2019 - 2020)</div> </li>
+                                <li><span>Secondary (10th)</span> <div class="tab-desc"> CBSE Board (2017 - 2018)</div> </li>
+                            </ul>
+                        </div>
                         
                     </div>
                 </div>
@@ -95,6 +127,8 @@
             typeSpeed: 70,
         });
     </script>
+
+   <script src="script.js"></script>
 
 
 </body>
